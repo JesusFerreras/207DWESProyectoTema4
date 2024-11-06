@@ -24,28 +24,34 @@
                 </li>
             </ul>
             <table>
-                <tbody>
-                    <tr>
-                        <th rowspan="2">Nº</th>
-                        <th rowspan="2">Enunciado</th>
-                        <th colspan="2">PDO</th>
-                        <th colspan="2">MySQLi</th>
-                    </tr>
-                    <tr>
-                        <th>Ejecutar</th>
-                        <th>Mostrar</th>
-                        <th>Ejecutar</th>
-                        <th>Mostrar</th>
-                    </tr>
-                    <tr>
-                        <td>01</td>
-                        <td>Conexión a la base de datos con la cuenta de usuario y tratamiento de errores</td>
-                        <td><a href="codigoPHP/ejercicio01PDO.php">&#x25B6;</a></td>
-                        <td><a href="mostrarCodigo/mostrarEjercicio01PDO.php">&#x25C9;</a></td>
-                        <td><a href="codigoPHP/ejercicio01MYSQLI.php">&#x25B6;</a></td>
-                        <td><a href="mostrarCodigo/mostrarEjercicio01MYSQLI.php">&#x25C9;</a></td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th rowspan="2">Nº</th>
+                    <th rowspan="2">Enunciado</th>
+                    <th colspan="2">PDO</th>
+                    <th colspan="2">MySQLi</th>
+                </tr>
+                <tr>
+                    <th>Ejecutar</th>
+                    <th>Mostrar</th>
+                    <th>Ejecutar</th>
+                    <th>Mostrar</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Conexión a la base de datos con la cuenta de usuario y tratamiento de errores</td>
+                    <td><a href="codigoPHP/ejercicio01PDO.php">&#x25B6;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio01PDO.php">&#x25C9;</a></td>
+                    <td><a href="codigoPHP/ejercicio01MYSQLI.php"></a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio01MYSQLI.php"></a></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Mostrar contenido de la tabla Departamento y el número de registros</td>
+                    <td><a href="codigoPHP/ejercicio02PDO.php">&#x25B6;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio02PDO.php">&#x25C9;</a></td>
+                    <td><a href="codigoPHP/ejercicio02MYSQLI.php"></a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio02MYSQLI.php"></a></td>
+                </tr>
             </table>
         </div>
         <footer>

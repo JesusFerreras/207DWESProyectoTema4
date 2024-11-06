@@ -9,13 +9,20 @@
         </header>
         <main>
             <?php
-                //Se definen los parametros de la conexion como constantes
-                define('DSN', 'mysql:host=daw207.isauces.local;port=3306;  dbname=DB207DWESProyectoTema4');
-                define('USUARIO', 'user207DWESProyectoTema4');
-                define('PASSWORD', 'paso');
+            /**
+             * @author Jesus Ferreras
+             * @since 2024/11/04
+             * @version 2024/11/06
+             */
+            
+                //Se importa el fichero con los parametros de conexion
+                require_once '../config/confDB_PDO.php';
                 
                 try {
+                    //Se abre la conexion
                     $miDB = new PDO(DSN, USUARIO, PASSWORD);
+                    
+                    //Se muestran por pantalla los atributos
                     print($miDB->getAttribute(PDO::ATTR_AUTOCOMMIT).'<br>');
                     print($miDB->getAttribute(PDO::ATTR_CASE).'<br>');
                     print($miDB->getAttribute(PDO::ATTR_CLIENT_VERSION).'<br>');
@@ -28,10 +35,12 @@
                     print($miDB->getAttribute(PDO::ATTR_SERVER_INFO).'<br>');
                     print($miDB->getAttribute(PDO::ATTR_SERVER_VERSION).'<br>');
                     print($miDB->getAttribute(PDO::ATTR_TIMEOUT).'<br>');
-
-                    unset($miDB);
                 } catch (Exception $ex) {
-                    print($ex->getMessage());
+                    //Se muestran el mensaje y codigo de error
+                    print('Error: '.$ex->getMessage().'<br>Codigo: '.$ex->getCode());
+                } finally {
+                    //Se cierra la conexion
+                    unset($miDB);
                 }
             ?>
         </main>
