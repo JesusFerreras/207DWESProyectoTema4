@@ -1,17 +1,21 @@
 <!doctype html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Jesús Ferreras">
-	<link rel="stylesheet" href="webroot/css/estilos.css">
+        <link rel="stylesheet" href="webroot/css/estilos.css">
         <title>DWES Tema 4</title>
     </head>
     <body>
         <header>
             <h1>Tema 4: Técnicas de acceso a datos en PHP</h1>
+            <div>
+                <a href="../207DWESProyectoTema3/indexProyectoTema3.php">&#10094; Anterior</a>
+                <a href="">Siguiente &#10095;</a>
+            </div>
         </header>
-        <div>
+        <main>
             <ul>
                 <li>
                     <a href="mostrarCodigo/mostrarScriptCreacion.php">Script de creación de base de datos y usuario</a>
@@ -40,7 +44,7 @@
                     <td>01</td>
                     <td>Conexión a la base de datos con la cuenta de usuario y tratamiento de errores</td>
                     <td><a href="codigoPHP/ejercicio01PDO.php">&#x25B6;</a></td>
-                    <td><a href="mostrarCodigo/mostrarEjercicio01PDO.php">&#x25C9;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio01PDO.php">&#128065;</a></td>
                     <td><a href="codigoPHP/ejercicio01MYSQLI.php"></a></td>
                     <td><a href="mostrarCodigo/mostrarEjercicio01MYSQLI.php"></a></td>
                 </tr>
@@ -48,22 +52,16 @@
                     <td>02</td>
                     <td>Mostrar contenido de la tabla Departamento y el número de registros</td>
                     <td><a href="codigoPHP/ejercicio02PDO.php">&#x25B6;</a></td>
-                    <td><a href="mostrarCodigo/mostrarEjercicio02PDO.php">&#x25C9;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio02PDO.php">&#128065;</a></td>
                     <td><a href="codigoPHP/ejercicio02MYSQLI.php"></a></td>
                     <td><a href="mostrarCodigo/mostrarEjercicio02MYSQLI.php"></a></td>
                 </tr>
             </table>
-        </div>
+        </main>
         <footer>
-            <div>
-                <a href="../index.html">Jesús Ferreras González</a>
-            </div>
-            <div>
-                <a href="../207DWESProyectoDWES/indexProyectoDWES.php">DWES</a>
-            </div>
-            <div>
-                <a href="https://github.com/JesusFerreras/207DWESProyectoTema4.git" target="_blank"><img src="doc/github.png" alt="github"></a>
-            </div>
+            <a href="../index.html">Jesús Ferreras González</a>
+            <a href="../207DWESProyectoDWES/indexProyectoDWES.php">DWES</a>
+            <a href="https://github.com/JesusFerreras/207DWESProyectoTema4.git" target="_blank"><img src="doc/github.png" alt="github"></a>
         </footer>
     </body>
 </html>
