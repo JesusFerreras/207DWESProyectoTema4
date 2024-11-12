@@ -12,7 +12,7 @@
             <h2>Mostrar contenido de la tabla Departamento y el número de registros</h2>
         </header>
         <main>
-            <div id="codigo">
+            <div class="codigo">
                 <?php
                     highlight_file("../codigoPHP/ejercicio02PDO.php");
                 ?>

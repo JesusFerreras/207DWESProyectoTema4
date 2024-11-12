@@ -12,7 +12,7 @@
             <h2>Script de borrado de base de datos y usuario</h2>
         </header>
         <main>
-            <div id="codigo">
+            <div class="codigo">
                 <?php
                     highlight_file("../scriptDB/BorraDB207DWESProyectoTema4.sql");
                 ?>

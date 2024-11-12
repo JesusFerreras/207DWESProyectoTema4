@@ -30,12 +30,11 @@
                     $resultadoConsulta = $miDB->query('select * from T02_Departamento');
                     
                     //Cada registro del resultado de la consulta
-                    $oRegistro = null;
+                    $oRegistro = $resultadoConsulta->fetchObject();
                     
                     //Si el resultado del query no es vacio
-                    if (!is_null($resultadoConsulta)) {
-                        $oRegistro = $resultadoConsulta->fetchObject();
-                        
+                    if ($oRegistro) {
+                        //Se muestran los nombres de los campos
                         print('<table><tr>');
                         
                         foreach ($oRegistro as $clave => $valor) {
@@ -43,6 +42,7 @@
                         }
                         print('</tr>');
                         
+                        //Se muestran los valores de todos los campos
                         do {
                             print('<tr>');
                             foreach ($oRegistro as $valor) {
@@ -52,6 +52,8 @@
                         } while ($oRegistro = $resultadoConsulta->fetchObject());
                         
                         print('</table>');
+                    } else {
+                        print('<p>Tabla vacía</p>');
                     }
                 } catch (Exception $ex) {
                     //Se muestran el mensaje y codigo de error

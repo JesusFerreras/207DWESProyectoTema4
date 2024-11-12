@@ -12,7 +12,7 @@
             <h2>Script de creación de base de datos y usuario</h2>
         </header>
         <main>
-            <div id="codigo">
+            <div class="codigo">
             <?php
                 highlight_file("../scriptDB/CreaDB207DWESProyectoTema4.sql");
             ?>

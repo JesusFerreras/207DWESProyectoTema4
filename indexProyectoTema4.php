@@ -27,7 +27,7 @@
                     <a href="mostrarCodigo/mostrarScriptBorrado.php">Script de borrado de base de datos y usuario</a>
                 </li>
             </ul>
-            <table>
+            <table class="contenido">
                 <tr>
                     <th rowspan="2">Nº</th>
                     <th rowspan="2">Enunciado</th>
@@ -55,6 +55,30 @@
                     <td><a href="mostrarCodigo/mostrarEjercicio02PDO.php">&#128065;</a></td>
                     <td><a href="codigoPHP/ejercicio02MYSQLI.php"></a></td>
                     <td><a href="mostrarCodigo/mostrarEjercicio02MYSQLI.php"></a></td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Formulario para añadir un departamento a la tabla con validación de entrada y control de errores</td>
+                    <td><a href="codigoPHP/ejercicio03PDO.php">&#x25B6;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio03PDO.php">&#128065;</a></td>
+                    <td><a href="codigoPHP/ejercicio03MYSQLI.php"></a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio03MYSQLI.php"></a></td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Formulario de búsqueda de departamentos por descripción</td>
+                    <td><a href="codigoPHP/ejercicio04PDO.php">&#x25B6;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio04PDO.php">&#128065;</a></td>
+                    <td><a href="codigoPHP/ejercicio04MYSQLI.php"></a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio04MYSQLI.php"></a></td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Inserción de registros mediante transacción</td>
+                    <td><a href="codigoPHP/ejercicio05PDO.php">&#x25B6;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio05PDO.php">&#128065;</a></td>
+                    <td><a href="codigoPHP/ejercicio05MYSQLI.php"></a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio05MYSQLI.php"></a></td>
                 </tr>
             </table>
         </main>

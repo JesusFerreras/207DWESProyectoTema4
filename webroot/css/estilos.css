@@ -22,8 +22,6 @@
 }
 
 * {
-    margin: 0px;    
-    padding: 0px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
@@ -33,6 +31,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     background-color: var(--fondoNeutro);
     position: relative;
@@ -83,7 +83,7 @@ header {
 main {
     margin: 8px 16px var(--alturaFooter);
 }
-    main>* {
+    main>:not(p) {
         width: 80%;
         margin: auto;
         margin-bottom: 64px;
@@ -98,7 +98,7 @@ main {
             main>table tr:nth-of-type(2n+1) {
                 background-color: var(--fondoClaro);
             }
-            main>table tr>:nth-of-type(1), tr>:nth-child(n+3) {
+            main>table.contenido tr>:nth-of-type(1), main>table.contenido tr>:nth-child(n+3) {
                 text-align: center;
             }
             main>table tr>* {
@@ -149,12 +149,12 @@ main {
                         border: 1px solid var(--colorLetra);
                     }
 
-    div#codigo {
+    div.codigo {
         background-color: var(--colorLetra);
         border-radius: 4px;
         padding: 8px;
     }
-            div#codigo span {
+            div.codigo span {
                 font-family: 'Courier New', Courier, monospace;
             }
 
@@ -219,7 +219,7 @@ main {
         background-color: var(--fondoClaro);
         border-radius: 8px;
     }
-        input, label {
+        input {
             color: var(--fondoNegro);
         }
             input[required], input.obligatorio {
@@ -230,6 +230,7 @@ main {
                 background-color: var(--grisC);
             }
             input[type="submit"] {
+                border: none;
                 padding: 8px 16px;
                 background-color: var(--colorAcento);
                 border-radius: 4px;

@@ -1,3 +1,4 @@
+delete from DB207DWESProyectoTema4.T02_Departamento;
 insert into DB207DWESProyectoTema4.T02_Departamento(T02_CodDepartamento,T02_DescDepartamento,T02_VolumenDeNegocio) values
     ('AAA', 'Departamento 1', 1),
     ('BBB', 'Departamento 2', 2),

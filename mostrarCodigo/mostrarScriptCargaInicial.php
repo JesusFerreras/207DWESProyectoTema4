@@ -12,7 +12,7 @@
             <h2>Script de carga inicial de base de datos</h2>
         </header>
         <main>
-            <div id="codigo">
+            <div class="codigo">
                 <?php
                     highlight_file("../scriptDB/CargaInicialDB207DWESProyectoTema4.sql");
                 ?>
