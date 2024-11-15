@@ -5,16 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Jesús Ferreras">
         <link rel="stylesheet" href="../webroot/css/estilos.css">
-        <title>Script borrado</title>
+        <title>Ejercicio07PDO</title>
     </head>
     <body>
         <header>
-            <h2>Script de borrado de base de datos y usuario</h2>
+            <h2>Importación de datos desde xml</h2>
         </header>
         <main>
             <div class="codigo">
                 <?php
-                    highlight_file("../scriptDB/BorraDB207DWESProyectoTema4.sql");
+                    highlight_file("../codigoPHP/ejercicio07PDO.php");
                 ?>
             </div>
         </main>
