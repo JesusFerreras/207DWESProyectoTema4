@@ -80,6 +80,14 @@
                     <td><a href="codigoPHP/ejercicio05MYSQLI.php"></a></td>
                     <td><a href="mostrarCodigo/mostrarEjercicio05MYSQLI.php"></a></td>
                 </tr>
+                <tr>
+                    <td>08</td>
+                    <td>Exportación de datos a xml</td>
+                    <td><a href="codigoPHP/ejercicio08PDO.php">&#x25B6;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio08PDO.php">&#128065;</a></td>
+                    <td><a href="codigoPHP/ejercicio08MYSQLI.php"></a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio08MYSQLI.php"></a></td>
+                </tr>
             </table>
         </main>
         <footer>

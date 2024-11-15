@@ -46,7 +46,15 @@
                         do {
                             print('<tr>');
                             foreach ($oRegistro as $valor) {
-                                print("<td>$valor</td>");
+                                //Si el valor debe ser numerico
+                                if (preg_match('/^[0-9]+(\.[0-9]+)?$/', $valor)) {
+                                    print('<td>'.number_format($valor, 2, ',', ' ').'</td>');
+                                //Si el valor debe ser datetime
+                                } else if (preg_match('/^[0-9]{4}-[0-9]{2}-[0-9]{2}\s[0-9]{2}:[0-9]{2}:[0-9]{2}$/', $valor)) {
+                                    print('<td>'.date_format(DateTimeImmutable::createFromFormat("Y-m-d H:i:s", $valor),'d/m/Y H:i:s').'</td>');
+                                } else {
+                                    print("<td>$valor</td>");
+                                }
                             }
                             print('</tr>');
                         } while ($oRegistro = $resultadoConsulta->fetchObject());
