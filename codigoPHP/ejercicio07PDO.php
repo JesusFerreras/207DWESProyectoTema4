@@ -26,9 +26,11 @@
                 $doc = new DOMDocument('1.0');
                 
                 //Ruta en la que esta el fichero
-                $ruta = '../tmp/'.date_format(new DateTime('now'), 'ymd').'departamentos.xml';
+                $ruta = '../tmp/241114departamentos.xml';
                 
                 if ($doc->load($ruta)) {
+                    
+                    $departamentos = $doc->getElementsByTagName("departamento");
                     
                     try {
                         //Se abre la conexion
@@ -39,8 +41,17 @@
 
                         //Inicio de la transaccion
                         $miDB->beginTransaction();
-
                         
+                        foreach ($departamentos as $departamento) {
+                            $fechaBaja = $departamento->getElementsByTagName('T02_FechaBajaDepartamento')->item(0)->textContent;
+                            $insercion->execute([
+                                ':codigo' => $departamento->getElementsByTagName('T02_CodDepartamento')->item(0)->textContent,
+                                ':descripcion' => $departamento->getElementsByTagName('T02_DescDepartamento')->item(0)->textContent,
+                                ':fechaAlta' => $departamento->getElementsByTagName('T02_FechaCreacionDepartamento')->item(0)->textContent,
+                                ':volumen' => $departamento->getElementsByTagName('T02_VolumenDeNegocio')->item(0)->textContent,
+                                ':fechaBaja' => empty($fechaBaja)? null : $fechaBaja
+                            ]);
+                        }
 
                         $miDB->commit();
 

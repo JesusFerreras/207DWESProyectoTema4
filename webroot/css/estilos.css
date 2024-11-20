@@ -105,7 +105,7 @@ main {
     margin: 8px 16px var(--alturaFooter);
 }
     main>:not(p) {
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-bottom: 64px;
     }
