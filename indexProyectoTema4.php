@@ -12,7 +12,7 @@
             <h1>Tema 4: Técnicas de acceso a datos en PHP</h1>
             <div>
                 <a href="../207DWESProyectoTema3/indexProyectoTema3.php">&#10094; Anterior</a>
-                <a href="">Siguiente &#10095;</a>
+                <a href="../207DWESProyectoTema5/indexProyectoTema5.php">Siguiente &#10095;</a>
             </div>
         </header>
         <main>
@@ -79,6 +79,14 @@
                     <td><a href="mostrarCodigo/mostrarEjercicio05PDO.php">&#128065;</a></td>
                     <td><a href="codigoPHP/ejercicio05MYSQLI.php"></a></td>
                     <td><a href="mostrarCodigo/mostrarEjercicio05MYSQLI.php"></a></td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td>Importación de datos desde xml</td>
+                    <td><a href="codigoPHP/ejercicio07PDO.php">&#x25B6;</a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio07PDO.php">&#128065;</a></td>
+                    <td><a href="codigoPHP/ejercicio07MYSQLI.php"></a></td>
+                    <td><a href="mostrarCodigo/mostrarEjercicio07MYSQLI.php"></a></td>
                 </tr>
                 <tr>
                     <td>08</td>
